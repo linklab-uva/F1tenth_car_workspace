@@ -116,6 +116,10 @@ include_directories(
 # ${catkin_INCLUDE_DIRS}
 )
 
+install(DIRECTORY launch config
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+)
+
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
 #   src/${PROJECT_NAME}/move_base.cpp
